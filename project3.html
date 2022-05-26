@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form replica</title>
+        <link rel="stylesheet" href="p3.css" type="text/css">
+    </head>
+    <!--/*#page{
+            background-color: white;
+            width: 500px;
+            margin-left:auto;
+            margin-right:auto;
+            text-align: center;
+        }
+    .social-wrap{
+            background-color: #ccc;
+            border-width: 1px;
+    }
+    #heading{
+            font-size: 32px;
+            padding-top: 56px;
+            padding-bottom: 32px;
+            text-align: center;
+        }
+    .icons{
+          width: 50px;
+          height: 50px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          padding-left: 32px;
+          padding-right: 32px;  
+        }
+    .item{
+            padding-top: 80px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    .label{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 1px solid #ccc;
+            width:100%;
+        }
+        #button{
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 18px;
+            text-align: center;
+        }*/-->
+<body style="background-color: #f2f6ff; margin: 0; padding: 16px;">
+    <h1 id="heading">Register</h1>
+    <form id="page">
+        <!--<div class="social-wrap">
+            <span><img class="icons" src="http://pluspng.com/img-png/google-logo-png-open-2000.png"/></span>
+            <span><img class="icons" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"/></span>
+            <span><img class="icons" src="data:image/png;base64,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"/></span>
+            <span><img class="icons" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png"/></span>
+        </div>-->
+        <div>
+            
+                <input class="label" type="text" name="username" placeholder="Fullname" required/><br/>
+               <input class="label"  type="email" name="email" placeholder="Email" disabled/><br/>
+               <input class="label"  type="number" name="age" placeholder="Age" min="18" max="46"/><br/>
+                <input class="label"  type="password" name="password" placeholder="Password" required maxlength="6"/><br/>
+                <input class="label" type="password" name="confirmpassword" placeholder="ConfirmPassword"/>
+        </div>
+        <div>
+            <input id="terms" type="checkbox" name="terms and conditions" value="accept">I agree to accept Terms and conditions
+        </div>
+        <div>
+            <input id="button" type="submit" value="SignUp"/>
+        </div>
+    </form>
+</body>
+</html>

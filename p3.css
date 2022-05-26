@@ -1,0 +1,47 @@
+#heading{
+    text-align: center;
+}
+#page{
+    width: 400px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px gray;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+.label{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    padding:8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+.label:focus{
+    background-color: lightpink;
+}
+.label:disabled{
+    cursor:not-allowed ;
+}
+.label:focus:required{
+    background-color: lightgreen;
+}
+#terms{
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+#button:hover{
+    background-color: burlywood;
+}
+#button{
+    width:100%;
+    padding:14px;
+    border-radius: 20px;
+    background-color: blue;
+
+}

@@ -1,0 +1,129 @@
+#div1{
+    width: 200px;
+    height: 300px;
+    font-size: 24px;
+    background-color: lightcoral;
+}
+#div2{
+    width: 300px;
+    height: 300px;
+    font-size: 24px;
+    background-color: burlywood;
+    margin-top: 24px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.image{
+    width:100%;
+    height: 100%;
+}
+.heading{
+    color: blue;
+    /*text-shadow:4px 4px 4px red,8px 8px 6px green;*/
+    height:100px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: aquamarine;
+    box-shadow: 4px 6px 10px gold;
+}
+#wrapper{
+    background-color: bisque;
+}
+article{
+    padding: 18px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background-color: aquamarine;
+    box-shadow: 4px 6px 10px rosybrown;
+}
+/*Descendant Selector
+article p{
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+}*/
+/* Child Selector
+article > p{
+    background-color: cornflowerblue;
+    color:white;
+}*/
+/*Adjacent Selector
+h3 + p{
+    background-color: blueviolet;
+}*/
+/* General Sibling Selector
+h3 ~ p{
+ 
+    background-color: cornflowerblue;
+    color:white;
+}*/
+/*selecting the first paragraph of each article*/
+/*article >p:first-of-type{
+    background-color: brown;
+    color:white;
+}*/
+/*selecting the last paragraph of each article*/
+/*article >p:last-of-type{
+    background-color: brown;
+    color:white;
+}*/
+/*selecting the second paragraph of each article*/
+/*article > p:nth-last-of-type(2){
+    background-color: brown;
+    color:white;
+}*/
+/*article > p:last-child{
+    background-color: chartreuse;
+    color: white;
+}*/
+/*article > p:nth-child(2){
+    background-color: chartreuse;
+    color: white;
+}*/
+/*article > p:nth-last-child(1){
+    background-color: chartreuse;
+    color: white;
+}*/
+/*article > p::first-line{
+    letter-spacing: 1.5px;
+    color: yellow;
+}
+article > p::first-letter{
+    font-size: 36px;
+    color: red;
+}
+article > p::selection{
+    background-color: chocolate;
+    columns: white;
+}*/
+
+article > p::before{
+    content: url("https://www.youtube.com/")
+
+}
+article > p::after{
+    content: " ' ";
+}
+/* Gradients*/
+#div3{
+    width: 100%;
+    height:100px;
+    background: linear-gradient(to right,pink,blue);
+}
+#div4{
+    width: 100px;
+    height:100px;
+    background: linear-gradient(45deg,red,blue);
+    margin-top: 48px;
+}
+#div5{
+    width: 200px;
+    height:200px;
+    background: radial-gradient(circle at top right,green,blue);
+    margin-top: 48px;
+}
+/* Text Overflow */
+/* overflow:hidden
+    text-overflow:elipsis clip
+    word-break:break-all,keep-all
+    word-wrap:break-word*/
